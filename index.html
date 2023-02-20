@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>basketball scorecard</title>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+    </head>
+    <body>
+
+        <script src="index.js"></script>
+
+        <div class="two-row-card">
+            <div class="two-col-card">
+                <div class="home-cont">
+                    <h1>HOME</h1>
+                    <div class="score" id="home-score">0</div>
+                    <div class="btn-row">
+                        <button class="add-btn" onclick="add1home()">+1</button>
+                        <button class="add-btn" onclick="add2home()">+2</button>
+                        <button class="add-btn" onclick="add3home()">+3</button>
+                    </div>
+                </div>
+
+                <div class="away-cont">
+                    <h1>AWAY</h1>
+                    <div class="score" id="away-score">0</div>
+                    <div class="btn-row">
+                        <button class="add-btn" onclick="add1away()">+1</button>
+                        <button class="add-btn" onclick="add2away()">+2</button>
+                        <button class="add-btn" onclick="add3away()">+3</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reset-cont" onclick="reset()">
+                <button id="reset-btn">RESET</button>
+            </div>
+        </div>
+    </body>
+</html>
